@@ -8,6 +8,9 @@ import StorefrontIcon from '@material-ui/icons/Storefront';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 import { Avatar, IconButton } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
+import ForumIcon from '@material-ui/icons/Forum';
+import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 function Header() {
   return (
@@ -19,12 +22,12 @@ function Header() {
         />
         <div className='header__input'>
           <SearchIcon />
-          <input type='text' />{' '}
+          <input placeholder='Search Facebook' type='text' />
         </div>
       </div>
 
-      <div className='header__middle'>
-        <div className='header__option'>
+      <div className='header__center'>
+        <div className='header__option header__option--active'>
           <HomeIcon fontSize='large' />
         </div>
         <div className='header__option'>
@@ -50,13 +53,13 @@ function Header() {
             <AddIcon />
           </IconButton>
           <IconButton>
-            <AddIcon />
+            <ForumIcon />
           </IconButton>
           <IconButton>
-            <AddIcon />
+            <NotificationsActiveIcon />
           </IconButton>
           <IconButton>
-            <AddIcon />
+            <ExpandMoreIcon />
           </IconButton>
         </div>
       </div>
